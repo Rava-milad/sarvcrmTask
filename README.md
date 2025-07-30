@@ -97,9 +97,6 @@ Change: const API_BASE = "http://sarvcrm.loc/api";
 To:    const API_BASE = "http://your-backend-address/api";
 
 🧪 Test Queries
-sql
-Copy
-Edit
 -- View all items
 SELECT * FROM shopping_lists ORDER BY created_at DESC;
 
