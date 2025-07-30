@@ -22,8 +22,8 @@ root/
 | Version      | Tech Stack               |
 |--------------|--------------------------|
 | Backend      | PHP 8.0 (No framework)   |
-| Frontend 1   | React.js pure            |
-| Frontend 2   | HTML + CSS + Vanilla JS  |
+| Frontend     | React.js pure            |
+| htmlpure     | HTML + CSS + Vanilla JS  |
 | DB           | MySQL                    |
 | Dev Env      | Devilbox (Linux)         |
 
