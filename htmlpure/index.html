@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست خرید من</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <!-- Loading Overlay -->
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="spinner"></div>
+            </div>
+
+            <!-- Header -->
+            <header class="header">
+                <h1>📝 لیست خرید من</h1>
+                <p>آیتم‌های مورد نیاز خود را اضافه، ویرایش و مدیریت کنید</p>
+            </header>
+
+            <!-- Add Section -->
+            <section class="add-section">
+                <div class="add-form">
+                    <input
+                        type="text"
+                        id="newItemInput"
+                        placeholder="آیتم جدید را وارد کنید..."
+                        class="add-input"
+                    />
+                    <button id="addBtn" class="add-btn">
+                        ➕ اضافه کردن
+                    </button>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalItems">0</span>
+                    <span class="stat-label">کل آیتم‌ها</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completedItems">0</span>
+                    <span class="stat-label">تکمیل شده</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="pendingItems">0</span>
+                    <span class="stat-label">باقی‌مانده</span>
+                </div>
+            </section>
+
+            <!-- Items Section -->
+            <section class="items-section">
+                <div class="empty-state" id="emptyState">
+                    <p>🛒 هنوز آیتمی اضافه نکرده‌اید</p>
+                    <p>اولین آیتم خود را اضافه کنید!</p>
+                </div>
+                <div class="items-list" id="itemsList"></div>
+            </section>
+
+            <!-- Clear Section -->
+            <section class="clear-section" id="clearSection" style="display: none;">
+                <button id="clearCompletedBtn" class="clear-completed-btn">
+                    🗑️ پاک کردن آیتم‌های تکمیل شده
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js">
+       
+    </script>
+</body>
+</html>
